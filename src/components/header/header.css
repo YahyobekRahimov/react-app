@@ -1,0 +1,132 @@
+header {
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav a {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33em; /* 133.333% */
+  transition: all 0.2s ease-in;
+  padding: 7px 15px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.header__nav a:hover {
+  background-color: #b3fae0;
+  box-shadow: 1px 2px 0px 0px #09A66D;
+}
+
+.header__search-register-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;  
+}
+
+.search,
+.cart {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #F3FBF8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search:hover,
+.cart:hover {
+  background-color: #defef2;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.11em; /* 111.111% */
+  border-radius: 8px;
+  background: #09A66D;
+  padding: 10px 23px;
+}
+
+.register-button:hover {
+  background-color: rgb(6, 137, 89)
+}
+
+.menu  {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  header {
+    padding-top: 3.125rem;
+    padding-bottom: 2.68rem;
+  }
+  
+  .header__nav {
+    gap: 1.25rem;
+  }
+  
+  .header__nav a {
+    font-size: 1.125rem;
+    padding: 0.4rem 0.95rem;
+    border-radius: 0.31rem;
+  }
+  
+  .header__search-register-wrapper {
+    gap: 2rem;  
+  }
+  
+  .search,
+  .cart {
+    padding: 0.5rem;
+  } 
+  
+  .register-button {
+    font-size: 1.125rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.43rem;
+  }
+  
+}
+
+
+@media (max-width: 800px) {
+  .header__container { 
+    position: relative;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transform: translateY(50%) translateX(50%);
+    padding: 2rem;
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .register-button {
+    display: none;
+  }
+}
