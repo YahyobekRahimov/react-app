@@ -13,12 +13,12 @@ export default function Header() {
           <img src={menu} alt="menu" />
         </button>
         <ul className="header__nav">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a to="#">About Us</a></li>
+            <li><a to="#">Service</a></li>
+            <li><a to="#">Menu</a></li>
+            <li><a to="#">Contact</a></li>
         </ul>   
-          <a href="#">
+          <a to="#">
             <img width='56' height='56' src={Logo} alt="Logo" />   
           </a>
         <div className='header__search-register-wrapper'>
